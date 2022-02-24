@@ -1,0 +1,410 @@
+*{
+    font-family: 'Laila', sans-serif;
+    font-weight: 550;
+    box-sizing: border-box;
+    /* background: #0b0c10; */
+}
+
+
+
+.Main{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #0b0c10; */
+    background-color: #27282b;
+
+    color:#66fcf1;
+    z-index: 2;
+    transition: 0.5s;
+    /* position: fixed;    */
+
+}
+
+.Main.active{
+    top: 50px;
+    /* position: -webkit-sticky;
+    position: sticky; */
+}
+
+.text{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+/* .text img{
+    width: 300px;
+} */
+
+
+.Main header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    /* text-transform: capitalize; */
+    cursor: pointer;
+    width: 80px;
+}
+
+/* Toggle Button  */
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('img/menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active{
+    background: url('img/close.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center; 
+}
+
+/* Navbar CSS */
+
+.menu{
+    position: relative;
+    top: 0.8rem;
+    left: 3.2rem;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.menu ul li{
+    margin:1rem;
+    padding: 0;
+    display: inline;
+    transition: 0.5s;
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+    /* position: -webkit-sticky; Safari */
+    /* position: fixed; */
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+.menu ul li a:hover{
+    color:#66fcf1;
+
+}
+
+.text h2{
+    margin-top: 2rem;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p{
+    font-size: 1.1em;
+    margin: 1.5rem 0 1.5rem 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111;
+    display: inline-block;
+    background: #fff;
+    padding: 6px 25px;
+    margin-top: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.25s;
+}
+
+.text a:hover{
+    letter-spacing: 3px;
+    padding: 6px 28px;
+}
+
+#cont1{
+    margin-bottom: 2rem;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    right: 10rem;
+}
+
+.about a{
+    font-size: 1.5rem;
+    padding: 20px 40px;
+    background:#66fcf1;
+    font-weight: 600;
+    color: #0b0c10;
+    width: 100%;
+}
+
+.about a:hover{
+    letter-spacing: 5px;
+    padding: 20px 40px;
+}
+
+/* .container{
+    margin-top: 1rem;
+} */
+
+.card{
+    margin-top: 1rem;
+}
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+   
+    font-family: 'Laila', sans-serif;
+    font-size:1.5rem;
+    /* text-align:center; */
+    height:3.5rem;
+    width:600px;
+    /* display:block;   */
+    position:relative;
+    color:white;
+    /* top:0;
+    bottom:0;
+    left:0;
+    right:0; */
+    margin:0rem 2rem 0rem 0.2rem;
+}
+
+.console-underscore {
+     display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+
+/* Social Links */
+
+.social{
+    position: absolute;
+    bottom: -1rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2.5rem;
+    /* margin-top: 2rem; */
+    height: auto;
+}
+
+.social li{
+    list-style-type: none;
+}
+
+.social li a{
+    display:inline-block;
+    filter:invert(1);
+    margin-right:15px;
+    transform: scale(0.5);
+    transition: 0.25s;
+}
+
+.social li a:hover{
+    transform: scale(0.7) translateY(-15px);
+}
+
+.card-proj{
+    padding: 20px 20px 20px 50px;
+    position: relative;
+    overflow: hidden;
+    margin: 1rem 0 1rem 0;
+    /* background-color: #fff; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    box-shadow:5px #0b0c10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 80%; */
+}
+
+.card-content-proj ul{
+    margin-top: 20px;
+}
+
+.col-proj img{
+    width: 500px;
+}
+
+
+
+.row{
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.card-skil h4{
+    margin: 2rem 0;
+}
+
+.col-skil{
+    text-align: center;
+
+}
+
+.col-skil img{
+    width:50%;
+}
+
+/* education */
+
+.card-educ{
+    width: 100%;
+    margin-top: 2rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-content-educ{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem 2rem;
+    margin-right: 2rem;
+    
+}
+
+
+
+.para1 p{
+    font-size: 0.8rem;
+    border-bottom: 1px solid #66fcf1;
+    margin-top: 0;
+}
+
+.para1 h6{
+    margin-bottom: 0.1rem;
+}
+
+.card-content-cont{
+    margin: 2rem;
+}
+
+.card-content-cont img{
+    filter:invert(1);
+    width: 5%;
+}
+
+/* .card-content-educ p{
+    font-size: 1rem;
+    margin-top: 0;
+} */
+
+
+/* Media Adjustment */
+
+@media(max-width:800px){
+    .Main, .Main header{
+        padding: 40px;
+    }
+
+    .Main.active{
+        top: 70px;
+        /* position: -webkit-sticky;
+        position: sticky; */
+        transition: 0.5s;
+    }
+
+    .text h2{
+        font-size: 2rem;
+        padding-top: 4rem;
+    }
+
+    .console-container{
+        font-size: 1.3rem;
+    }
+
+    .text p{
+    font-size: 1rem;
+
+    }
+
+    .menu{
+        position: relative;
+        top: 0.8rem;
+        left: 0.8rem;
+        width: 80%;
+        transition: 0.5s;
+    }
+
+    .menu ul li a{
+        /* text-decoration: none; */
+        font-size: 0.7rem;
+        /* color: #111; */
+    }
+
+    .menu ul li{
+        margin:0.5rem;
+        padding: 0;
+        display: inline;
+        transition: 0.5s;
+    }
+
+    .toggle{
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+    }
+
+    .toggle.active{
+        background: url('img/close.png');
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: center; 
+    }
+
+    .toggle.active:hover,.toggle:hover{
+        /* color: #66fcf1;  */
+        transform: scale(1.2) translateY(-1px);
+    }    
+
+}
+
